@@ -1,0 +1,14 @@
+OverTheWire Bandit: Level 11 → 12
+
+Objective
+Obtain the password for Level 12.
+The password is stored in data.txt, where letters have been rotated by 13 positions (ROT13).
+
+Steps
+Log in as bandit11:
+ssh bandit11@bandit.labs.overthewire.org -p 2220
+Decode the ROT13 text:
+cat data.txt | tr 'A-Za-z' 'N-ZA-Mn-za-m'
+
+Result
+The decoded output reveals the password for Bandit Level 12.
