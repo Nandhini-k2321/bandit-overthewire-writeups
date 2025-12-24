@@ -1,0 +1,13 @@
+OverTheWire Bandit: Level 1 → 2
+Objective
+Retrieve the password for Level 2.
+The password is stored in a file named - in the home directory.
+Steps
+Log in as bandit1 using the password from Level 0 → 1:
+ssh bandit1@bandit.labs.overthewire.org -p 2220
+List files in the directory:
+ls
+Read the file named - using an explicit path:
+cat ./-
+Result
+The contents of the file provide the password for Bandit Level 2.
