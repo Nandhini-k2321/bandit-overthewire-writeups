@@ -1,0 +1,14 @@
+OverTheWire Bandit: Level 9 → 10
+
+Objective
+Obtain the password for Level 10.
+The password is stored in the file data.txt among human-readable strings, preceded by several = characters.
+
+Steps
+Log in as bandit9:
+ssh bandit9@bandit.labs.overthewire.org -p 2220
+Extract readable strings and filter the password:
+strings data.txt | grep "="
+
+Result
+The output reveals the password for Bandit Level 10.
