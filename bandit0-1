@@ -1,0 +1,12 @@
+OverTheWire Bandit: Level 0 → 1
+Objective:Log in to the Bandit server and retrieve the password for Level 1, which is stored in a file named readme.
+Steps
+Connect to the server via SSH:
+ssh bandit0@bandit.labs.overthewire.org -p 222
+List files in the home directory:
+ls
+Read the password file:
+cat readme
+Result
+The contents of the readme file provide the password for Bandit Level 1.
+
