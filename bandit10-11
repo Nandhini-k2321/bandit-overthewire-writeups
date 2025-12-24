@@ -1,0 +1,15 @@
+OverTheWire Bandit: Level 10 → 11
+
+Objective
+Retrieve the password for Level 11.
+The password is stored in the file data.txt, which is Base64 encoded.
+
+Steps
+Log in as bandit10:
+ssh bandit10@bandit.labs.overthewire.org -p 2220
+Decode the Base64 content:
+base64 -d data.txt
+
+Result
+The decoded output displays the password for Bandit Level 11.
+
