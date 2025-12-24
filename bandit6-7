@@ -1,0 +1,16 @@
+OverTheWire Bandit: Level 6 → 7
+
+Objective
+Obtain the password for Level 7.
+The password is stored in a file owned by user bandit7, owned by group bandit6, and 33 bytes in size.
+
+Steps
+Log in as bandit6:
+ssh bandit6@bandit.labs.overthewire.org -p 2220
+Search the system for the file with the specified ownership and size:
+find / -type f -user bandit7 -group bandit6 -size 33c 2>/dev/null
+Read the file:
+cat <file-path>
+
+Result
+The file contains the password for Bandit Level 7.
