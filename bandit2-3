@@ -1,0 +1,13 @@
+OverTheWire Bandit: Level 2 → 3
+Objective
+Obtain the password for Level 3.
+The password is stored in a file named spaces in this filename.
+Steps
+Log in as bandit2:
+ssh bandit2@bandit.labs.overthewire.org -p 2220
+List files in the directory:
+ls
+Read the file containing spaces using quotes:
+cat "spaces in this filename"
+Result
+The file output displays the password for Bandit Level 3.
