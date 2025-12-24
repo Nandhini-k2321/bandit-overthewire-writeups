@@ -1,0 +1,19 @@
+OverTheWire Bandit: Level 5 → 6
+
+Objective
+Find the password for Level 6.
+The password is located in a file that is
+human-readable
+1033 bytes in size
+not executable
+
+Steps
+Log in as bandit5:
+ssh bandit5@bandit.labs.overthewire.org -p 2220
+Search for the file matching the given conditions:
+find inhere -type f -size 1033c ! -executable
+Read the file:
+cat inhere/<path-to-file>
+
+Result
+The file output displays the password for Bandit Level 6.
