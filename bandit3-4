@@ -1,0 +1,13 @@
+OverTheWire Bandit: Level 3 → 4
+Objective
+Find the password for Level 4.
+The password is stored in a hidden file inside the inhere directory.
+Steps
+Log in as bandit3:
+ssh bandit3@bandit.labs.overthewire.org -p 2220
+List files, including hidden ones:
+ls -a inhere
+Read the hidden file:
+cat inhere/.hidden
+Result
+The hidden file contains the password for Bandit Level 4.
