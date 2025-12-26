@@ -1,0 +1,13 @@
+OverTheWire Bandit: Level 18 → 19
+
+Objective
+Retrieve the password for Level 19.
+Logging in normally logs you out immediately, so the password must be read without an interactive shell.
+
+Steps
+Execute a command directly over SSH:
+ssh bandit18@bandit.labs.overthewire.org -p 2220 cat readme
+
+Result
+The output of the command displays the password for Bandit Level 19.
+
