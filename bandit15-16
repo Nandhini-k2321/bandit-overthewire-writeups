@@ -1,0 +1,15 @@
+OverTheWire Bandit: Level 15 → 16
+
+Objective
+Obtain the password for Level 16.
+The password is available from a service running on localhost port 30001, which requires an SSL/TLS connection.
+
+Steps
+Log in as bandit15:
+ssh bandit15@bandit.labs.overthewire.org -p 2220
+Connect securely to the service using openssl:
+openssl s_client -connect localhost:30001
+Paste the password for Bandit 15 and press Enter.
+
+Result
+The service responds with the password for Bandit Level 16.
