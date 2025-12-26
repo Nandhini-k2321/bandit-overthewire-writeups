@@ -1,0 +1,15 @@
+OverTheWire Bandit: Level 14 → 15
+
+Objective
+Retrieve the password for Level 15.
+The password for the next level must be submitted to a service running on localhost port 30000 using plain text.
+
+Steps
+Log in as bandit14:
+ssh bandit14@bandit.labs.overthewire.org -p 2220
+Send the Level 14 password to the local service using nc:
+nc localhost 30000
+Paste the password for Bandit 14 and press Enter.
+
+Result
+The service returns the password for Bandit Level 15.
