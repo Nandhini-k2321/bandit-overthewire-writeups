@@ -1,0 +1,14 @@
+OverTheWire Bandit: Level 17 → 18
+
+Objective
+Find the password for Level 18.
+The password is stored in a file that differs between two text files.
+
+Steps
+Log in as bandit17:
+ssh bandit17@bandit.labs.overthewire.org -p 2220
+Compare the two files to identify the difference:
+diff passwords.old passwords.new
+
+Result
+The differing line contains the password for Bandit Level 18
