@@ -1,0 +1,14 @@
+OverTheWire Bandit: Level 19 → 20
+
+Objective
+Obtain the password for Level 20.
+A setuid binary allows execution of commands as the user bandit20.
+
+Steps
+Log in as bandit19:
+ssh bandit19@bandit.labs.overthewire.org -p 2220
+Execute the setuid binary to read the password file:
+./bandit20-do cat /etc/bandit_pass/bandit20
+
+Result
+The command outputs the password for Bandit Level 20.
