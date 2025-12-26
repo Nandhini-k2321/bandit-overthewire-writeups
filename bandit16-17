@@ -1,0 +1,22 @@
+OverTheWire Bandit: Level 16 → 17
+
+Objective
+Retrieve the password for Level 17.
+A service running on localhost (ports 31000–32000) provides an SSH private key after a successful SSL connection.
+
+Steps
+Log in as bandit16:
+ssh bandit16@bandit.labs.overthewire.org -p 2220
+Scan for the SSL-enabled service:
+nmap -p 31000-32000 localhost
+Connect to the correct port using SSL:
+openssl s_client -connect localhost:<port>
+Paste the password for Bandit 16 to receive an SSH private key.
+Save the key and set correct permissions:
+chmod 600 key.txt
+Use the key to log in as bandit17:
+ssh bandit17@localhost -i key.txt
+
+Result
+Successful login grants access to Bandit Level 17.
+
