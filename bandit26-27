@@ -1,0 +1,12 @@
+OverTheWire Bandit: Level 26 → 27
+
+Objective
+Retrieve the password for Level 27.
+A setuid binary allows executing commands as user bandit27.
+
+Steps
+From the shell obtained as bandit26, run the provided binary:
+./bandit27-do cat /etc/bandit_pass/bandit27
+
+Result
+The command outputs the password for Bandit Level 27.
