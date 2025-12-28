@@ -1,0 +1,18 @@
+OverTheWire Bandit: Level 22 → 23
+
+Objective
+Retrieve the password for Level 23.
+A cron job runs a script that writes the password to a file with a predictable name in /tmp.
+
+Steps
+Log in as bandit22:
+ssh bandit22@bandit.labs.overthewire.org -p 2220
+View the cron job configuration:
+cat /etc/cron.d/cronjob_bandit23
+Inspect the executed script:
+cat /usr/bin/cronjob_bandit23.sh
+Identify the generated filename and read it:
+cat /tmp/<identified_filename>
+
+Result
+The file contains the password for Bandit Level 23.
