@@ -1,0 +1,16 @@
+OverTheWire Bandit: Level 32 → 33
+
+Objective
+Retrieve the password for Level 33.
+The login shell converts all input to uppercase, restricting normal command execution.
+
+Steps
+Log in as bandit32:
+ssh bandit32@bandit.labs.overthewire.org -p 2220
+Execute a command using a special shell variable to bypass the restriction:
+$0
+Read the password file:
+cat /etc/bandit_pass/bandit33
+
+Result
+The command outputs the password for Bandit Level 33, completing the Bandit wargame.
