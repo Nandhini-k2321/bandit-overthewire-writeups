@@ -1,0 +1,22 @@
+OverTheWire Bandit: Level 31 → 32
+
+Objective
+Obtain the password for Level 32.
+The password is revealed after pushing a correctly formatted commit to a Git repository.
+
+Steps
+Log in as bandit31 and clone the repository:
+ssh bandit31@bandit.labs.overthewire.org -p 2220
+git clone ssh://bandit31@localhost/home/bandit31-git/repo
+cd repo
+Check the instructions in the repository:
+cat README.md
+Create the required file with the specified content:
+echo "May I come in?" > key.txt
+Add, commit, and push the changes:
+git add key.txt
+git commit -m "Add key file"
+git push
+
+Result
+The server responds with the password for Bandit Level 32.
