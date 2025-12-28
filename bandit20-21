@@ -1,0 +1,17 @@
+OverTheWire Bandit: Level 20 → 21
+
+Objective
+Retrieve the password for Level 21.
+A program listens on a TCP port and expects the Level 20 password to be sent to it.
+
+Steps
+Log in as bandit20:
+ssh bandit20@bandit.labs.overthewire.org -p 2220
+Start a listener on a chosen port (example: 1234):
+nc -lvp 1234
+In another terminal, run the provided binary and point it to the listener:
+./suconnect 1234
+Send the Bandit 20 password through the listener.
+
+Result
+The program responds with the password for Bandit Level 21.
