@@ -1,0 +1,18 @@
+OverTheWire Bandit: Level 29 → 30
+
+Objective
+Obtain the password for Level 30.
+The password is stored in a Git tag, not in the commit history or branches.
+
+Steps
+Log in as bandit29 and clone the repository:
+ssh bandit29@bandit.labs.overthewire.org -p 2220
+git clone ssh://bandit29@localhost/home/bandit29-git/repo
+cd repo
+List available Git tags:
+git tag
+View the content of the tag:
+git show <tag-name>
+
+Result
+The tag content reveals the password for Bandit Level 30.
