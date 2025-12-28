@@ -1,0 +1,20 @@
+OverTheWire Bandit: Level 28 → 29
+
+Objective
+Retrieve the password for Level 29.
+The password is not in the current branch but exists in another Git branch.
+
+Steps
+Log in as bandit28 and clone the repository:
+ssh bandit28@bandit.labs.overthewire.org -p 2220
+git clone ssh://bandit28@localhost/home/bandit28-git/repo
+cd repo
+List available branches:
+git branch -a
+Switch to the relevant branch:
+git checkout <branch-name>
+View the file containing the password:
+cat README.md
+
+Result
+The password found in the alternate branch is used for Bandit Level 29.
