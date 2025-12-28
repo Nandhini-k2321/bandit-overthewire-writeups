@@ -1,0 +1,22 @@
+OverTheWire Bandit: Level 30 → 31
+
+Objective
+Retrieve the password for Level 31.
+The password is stored in a Git repository, but the file is ignored by .gitignore.
+
+Steps
+Log in as bandit30 and clone the repository:
+ssh bandit30@bandit.labs.overthewire.org -p 2220
+git clone ssh://bandit30@localhost/home/bandit30-git/repo
+cd repo
+List all files, including hidden ones:
+ls -la
+View the .gitignore file to identify ignored content:
+cat .gitignore
+Force Git to show ignored files:
+git status --ignored
+Read the ignored file containing the password:
+cat <ignored-file>
+
+Result
+The ignored file contains the password for Bandit Level 31.
