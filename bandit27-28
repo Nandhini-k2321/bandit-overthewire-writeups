@@ -1,0 +1,19 @@
+OverTheWire Bandit: Level 27 → 28
+
+Objective
+Obtain the password for Level 28.
+The password is stored in a Git repository, but has been removed in the latest commit.
+
+Steps
+Log in as bandit27:
+ssh bandit27@bandit.labs.overthewire.org -p 2220
+Clone the provided Git repository:
+git clone ssh://bandit27@localhost/home/bandit27-git/repo
+cd repo
+View the commit history:
+git log
+Inspect earlier commits to find the password:
+git show <commit-id>
+
+Result
+A previous commit contains the password for Bandit Level 28.
